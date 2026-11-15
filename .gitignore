@@ -1,0 +1,45 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Local-only Claude Code permissions
+.claude/settings.local.json
+
+# Exercise GIFs are © Gym visual and not covered by this repo's license.
+# They're downloaded automatically before `npm run dev` / `npm run build`.
+public/exercises/gifs/
+
+# Third-party agent skills (no license file); reinstall from skills-lock.json
+.agents/
+.claude/skills/
+
+# Third-party design references (no license to redistribute) — kept locally only
+inspiration-mockups/
+
+# Env files
+.env
+.env.*
+
+# Agent tooling, kept locally only
+skills-lock.json
