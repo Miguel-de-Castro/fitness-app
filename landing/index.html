@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Workout: treinos em casa por tempo</title>
+  <meta name="description" content="PWA instalável que monta treinos em casa só com peso corporal, por tempo, com timer guiado, funcionamento offline e histórico local. Projeto de Miguel Castro.">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#0b0b0d" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f7f7f5" media="(prefers-color-scheme: light)">
+  <meta name="author" content="Miguel Castro">
+
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Home Workout: treinos em casa por tempo">
+  <meta property="og:description" content="PWA que monta treinos só com peso corporal, conduz cada exercício com timer e funciona offline.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/Miguel-de-Castro/fitness-app/main/landing/static/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Telas do app Home Workout: gerador de treino e histórico no celular.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Home Workout: treinos em casa por tempo">
+  <meta name="twitter:description" content="PWA que monta treinos só com peso corporal, conduz cada exercício com timer e funciona offline.">
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Miguel-de-Castro/fitness-app/main/landing/static/og.png">
+
+  <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/static/fonts/geist-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="/" aria-label="Home Workout, início">
+        <img src="/static/favicon.svg" alt="" width="28" height="28">
+        <span>Home Workout</span>
+      </a>
+      <nav aria-label="Principal" class="nav-links">
+        <a class="nav-link" href="#decisoes">Decisões</a>
+        <a class="nav-link" href="#como-rodar">Como rodar</a>
+        <a class="btn btn-sm" href="https://github.com/Miguel-de-Castro/fitness-app">Ver código no GitHub</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero wrap" aria-labelledby="titulo">
+      <div class="hero-copy">
+        <p class="eyebrow rise" data-d="0">Sem equipamento, sem academia</p>
+        <h1 id="titulo" class="rise" data-d="1"><span>Defina o tempo.</span> <span>Receba o treino.</span></h1>
+        <p class="lead rise" data-d="2">PWA que monta treinos em casa só com peso corporal e conduz cada exercício com timer, offline.</p>
+        <div class="cta rise" data-d="3">
+          <a class="btn" href="https://github.com/Miguel-de-Castro/fitness-app">Ver código no GitHub</a>
+          <a class="btn btn-ghost" href="#como-rodar">Como rodar</a>
+        </div>
+      </div>
+      <div class="hero-visual rise" data-d="2">
+        <div class="shot shot-main">
+          <img src="/static/generate.png" width="1440" height="900" fetchpriority="high" alt="Tela do gerador: controle de tempo de 5 a 60 minutos, intensidade, estrutura, áreas de foco e a lista de 21 exercícios gerada.">
+        </div>
+        <div class="shot shot-phone">
+          <img src="/static/mobile-home.png" width="780" height="1688" fetchpriority="high" alt="Tela inicial no celular: botão para iniciar um treino, estatísticas e treinos recentes.">
+        </div>
+      </div>
+    </section>
+
+    <section class="facts wrap reveal" aria-label="O app em números">
+      <dl>
+        <div><dt>exercícios de peso corporal</dt><dd>325</dd></div>
+        <div><dt>intensidades, de 30s/25s a 45s/10s</dt><dd>3</dd></div>
+        <div><dt>estruturas: circuito, rounds, séries</dt><dd>3</dd></div>
+        <div><dt>backends ou contas de usuário</dt><dd>0</dd></div>
+      </dl>
+    </section>
+
+    <section class="split wrap" aria-labelledby="t-guiado">
+      <figure class="shot reveal">
+        <img src="/static/workout.png" width="1440" height="900" loading="lazy" alt="Tela do treino guiado: anel de contagem de 0:38 na fase de trabalho, nome do exercício, próximo exercício e botões de pausar e pular.">
+        <figcaption>Nos prints, a animação do exercício é trocada por um ícone neutro (direitos de terceiros).</figcaption>
+      </figure>
+      <div class="split-copy reveal">
+        <h2 id="t-guiado">Um timer que conduz o treino</h2>
+        <p>Anel de contagem com fases de trabalho e descanso, nome e músculos do exercício e o próximo da fila em destaque.</p>
+        <p>Dá para pausar, pular ou encerrar antes, com confirmação.</p>
+      </div>
+    </section>
+
+    <section class="stack wrap" aria-labelledby="t-historico">
+      <div class="stack-copy reveal">
+        <h2 id="t-historico">Histórico que fica no seu aparelho</h2>
+        <p>Total de treinos, treinos e minutos da semana, sequência de dias e a lista de sessões. Sessões encerradas antes são marcadas. Nada sai do navegador.</p>
+      </div>
+      <figure class="shot reveal">
+        <img src="/static/home.png" width="1440" height="900" loading="lazy" alt="Tela inicial: chamada para iniciar treino, quatro indicadores (treinos, semana, minutos, sequência) e a lista de treinos recentes.">
+      </figure>
+    </section>
+
+    <section id="decisoes" class="decisions wrap" aria-labelledby="t-decisoes">
+      <h2 id="t-decisoes" class="reveal">Decisões técnicas</h2>
+      <div class="bento">
+        <article class="cell cell-gen reveal">
+          <h3>Treino montado por orçamento de tempo</h3>
+          <p>Cada exercício ocupa um slot de trabalho mais descanso. O gerador divide o tempo total pelo slot e escolhe os exercícios em rodízio entre os grupos musculares, sem repetir o anterior em sequência.</p>
+          <pre class="code" tabindex="0" aria-label="Trecho de src/lib/workout-generator.ts"><code>const totalSlots = Math.max(1,
+  Math.floor(totalSeconds / slotSeconds))
+
+const uniqueCount = structure === 'circuit'
+  ? totalSlots
+  : Math.max(1, Math.floor(totalSlots / sets))</code></pre>
+          <p class="note">Trecho de <code>src/lib/workout-generator.ts</code>.</p>
+        </article>
+
+        <article class="cell cell-local reveal">
+          <h3>Local-first, sem backend</h3>
+          <p>Histórico e preferências em <code>localStorage</code> com chave versionada. Cada item é validado na leitura e uma falha de escrita não derruba o app. Guarda até 200 sessões.</p>
+        </article>
+
+        <article class="cell cell-pwa reveal">
+          <h3>Offline e instalável</h3>
+          <p>Service worker com <code>vite-plugin-pwa</code> e precache do Workbox. Depois da primeira carga, o treino roda sem rede.</p>
+        </article>
+
+        <article class="cell cell-data reveal">
+          <h3>Dados reproduzíveis, licença respeitada</h3>
+          <p>Um script busca um commit fixo do dataset, filtra os exercícios de peso corporal e gera o JSON do app. Os GIFs, com direitos de terceiros, não entram no repositório e são baixados na primeira execução.</p>
+        </article>
+
+        <article class="cell cell-stack reveal">
+          <h3>Stack</h3>
+          <ul class="tags">
+            <li>React 19</li>
+            <li>TypeScript</li>
+            <li>Vite 8</li>
+            <li>Tailwind CSS v4</li>
+            <li>shadcn/ui e Radix</li>
+            <li>react-router</li>
+            <li>oxlint</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="como-rodar" class="run wrap" aria-labelledby="t-rodar">
+      <div class="run-copy reveal">
+        <h2 id="t-rodar">Como rodar localmente</h2>
+        <p>Não há versão hospedada: o app roda na sua máquina. A primeira execução leva cerca de um minuto para baixar os GIFs.</p>
+        <p>Requer Node.js 20.19 ou superior (ou 22.12+), git e acesso à rede nessa primeira vez.</p>
+      </div>
+      <div class="run-code reveal">
+        <pre class="code" tabindex="0" aria-label="Comandos para rodar o projeto"><code>git clone https://github.com/Miguel-de-Castro/fitness-app.git
+cd fitness-app
+npm install
+npm run dev</code></pre>
+        <p class="note">Para testar o service worker, use <code>npm run build</code> e depois <code>npm run preview</code>.</p>
+        <a class="btn" href="https://github.com/Miguel-de-Castro/fitness-app">Ver código no GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <p>Por <a href="https://github.com/Miguel-de-Castro">Miguel Castro</a>. Código sob licença MIT.</p>
+      <p class="credit">Animações de exercícios &copy; Gym visual, <a href="https://gymvisual.com/" rel="noopener">https://gymvisual.com/</a>. Dados dos exercícios de <a href="https://github.com/hasaneyldrm/exercises-dataset" rel="noopener">hasaneyldrm/exercises-dataset</a> (MIT). As animações não aparecem nesta página. Detalhes em <a href="https://github.com/Miguel-de-Castro/fitness-app/blob/main/THIRD_PARTY_NOTICES.md" rel="noopener">THIRD_PARTY_NOTICES.md</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
