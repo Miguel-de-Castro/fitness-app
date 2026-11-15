@@ -1,6 +1,6 @@
 # Home Workout
 
-**Landing page:** https://fitness-app-miguel.vercel.app
+**Landing page:** https://home-workout-miguel.vercel.app
 
 An installable PWA that turns "I have 20 minutes" into a balanced home workout you can do with little or no equipment. Pick a time budget, an intensity and a structure, and you get a time-boxed sequence of bodyweight exercises with an animated GIF and a guided work/rest timer for each one.
 
